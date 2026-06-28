@@ -1,0 +1,36 @@
+def convert_string_to_int(list_a):
+    new_list = []
+    for item in list_a:
+        num = int(item)
+        new_list.append(num)
+    return new_list
+
+
+m, n = input("Enter rows and columns: ").split()
+m, n = int(m), int(n)
+num_list = []
+
+for i in range(m):
+    list_a = input("Enter matrix: ").split()
+    list_a = convert_string_to_int(list_a)
+    num_list.append(list_a)
+
+maxL=num_list[0][0]
+r=0
+c=0
+for i in range(len(num_list)):
+    for j in range(len(num_list[i])):
+        if num_list[i][j]>maxL:
+            maxL=num_list[i][j]
+            r=i 
+            c=j
+Lr=[]
+Lc=[]
+for i in range(len(num_list)):
+    for j in range(len(num_list[i])):
+        if i==r:
+            Lr+=[num_list[i][j]]
+        if j==c:
+            Lc+=[num_list[i][j]]
+print(Lr)
+print(Lc)
