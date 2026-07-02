@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("Enter the number of sets: "))
 main_list = []
 def convert_int_list(num):
     int_list = []
@@ -7,7 +7,7 @@ def convert_int_list(num):
     return int_list
 
 for i in range(n):
-    num = input().split()
+    num = input("Enter elements of set {}: ".format(i+1)).split()
     num = convert_int_list(num)
     main_list.append(num)
 intersect = []
