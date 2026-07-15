@@ -2,6 +2,6 @@
 def message(arg_1, arg_2):
     print(arg_1+" is a "+arg_2+" years old.")
 
-name = input()
-age = int(input())
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
 message(name,age)
