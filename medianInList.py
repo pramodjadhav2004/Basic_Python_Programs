@@ -5,7 +5,7 @@ This script takes a comma-separated list of numbers, sorts them, and
 calculates the statistical median. It handles both even and odd-length 
 datasets appropriately.
 """
-string = input()
+string = input("Enter a list of numbers separated by commas: ")
 int_string = string.split(',')
 list_a = []
 count = len(int_string)
